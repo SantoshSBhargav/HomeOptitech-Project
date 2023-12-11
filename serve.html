@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <style>
+        
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+       
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f279;
+            color: #d6ece6;
+            background-image: url(color.jpg);
+            
+        }
+
+        header {
+            background-color: #23796c;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        
+        .login-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #000000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+           
+        }
+
+        /* Services section */
+        .services {
+            background-color: #ffffffa9;
+            padding: 20px;
+            margin-top: 20px;
+            font-color:white;
+        }
+
+        .service {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-image: url(new.jpg);
+            backface-visibility: visible;
+        }
+
+        
+        footer {
+            background-color: #256752;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+        <div id="container">
+            <button class ="login-button" onclick="goToLogPage()">login</button>
+        </div>
+        
+        
+    </header>
+    <div class="container">
+        <section class="services">
+            <div class="service">
+                <h2 >BILL ESTIMATION</h2>
+                <p >Our Bill Estimation service is here to bring clarity to your expenses. By leveraging your previous utility bills as input, we provide you with a precise estimate of your current usage and the corresponding bill cost.
+
+                   <br>
+                   <hr> <b>How It Works:</b><br><br><br>
+                    
+                    <b>Input Your Previous Bills:</b> Simply provide us with your previous utility bills, including electricity, water, gas, or any other relevant services.<br><br>
+                    
+                    <b>Data Analysis:</b> Our advanced algorithms meticulously analyze your historical usage patterns and billing data.<br><br>
+                    
+                    <b>Accurate Cost Estimation:</b> Using the data collected, we calculate your estimated usage for the current month and forecast your upcoming bill cost.<br><br>
+                    
+                    <b> Stay in Control:</b> Armed with this valuable information, you can budget more effectively, reduce your energy consumption, and avoid unexpected financial surprises.<br><br>
+                    
+                    Our Bill Estimation service empowers you to plan your expenses with confidence. Say goodbye to billing uncertainties and hello to financial peace of mind.<br><br>
+                    
+                    Ready to get started? Contact us today to learn more about how we can help you take control of your utility expenses!<br><br>
+                    
+                    Feel free to customize this description to match the tone and style of your website. Additionally, you can add any specific details or features that your service offers to make it even more appealing to your visitors.
+                    
+                    
+                    
+                    
+                    </p>
+            </div>
+            <div class="service">
+                <h2>PRODUCT RECOMMENDATION</h2>
+                <p><b>Personalized Suggestions: </b>
+                    Our intelligent algorithms analyze your browsing and purchase history to understand your tastes and preferences.<br><br><br>
+
+                    <b>Tailored Recommendations:</b> Based on your individual preferences, we curate a selection of products that match your interests, style, and needs.<br><br>
+                    
+                    <b>Discover New Favorites:</b> Explore a handpicked collection of products you might not have discovered on your own, opening up new possibilities for your shopping enjoyment.<br><br> </p>
+            </div>
+            
+        </section>
+    </div>
+    <footer>
+        &copyrights by  2023 HOME OPTITECH
+    </footer>
+    <script>
+        function goToLogPage() {
+            var nextPageUrl = "login.php";
+            window.location.href = nextPageUrl;
+        }
+    </script>
+</body>
+</html>

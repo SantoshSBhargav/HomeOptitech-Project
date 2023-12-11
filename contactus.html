@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background: local;
+            background-image: url("bg.png");
+        }
+
+        header {
+            background-color: #129aa9;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffffb5;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(7, 199, 224);
+        }
+
+        .contact-form h2,
+        .contact-info h2 {
+            color: #2a8bb8;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        
+        input[type="email"]
+            
+        ,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #0e8484;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            
+
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <div class="container">
+        <section class="contact-form">
+            <h2>Send us a message</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+            <ul>
+                <li>Email: <a href="santunani182@gmail.com">homeoptitech@gmail.com</a></li>
+                <li>
+                830194256</li>
+                <li>Address: 123 Main Street,Tgp,Vishakapatnam
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023@ HOME OPTITECH BY BATCH14 .All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="umlst.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>HOME OPTITECH</title>
+    <style>
+    
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 140px;
+            width: 230px;
+        }
+
+        .logo h1 {
+            margin-left: 10px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-buttons li {
+            margin-right: 20px;
+        }
+
+        .cta-button {
+            background-color: rgb(17, 177, 195);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .container{
+            width:100% ;
+            padding: 70px 30px 20px;
+        }
+        .socialicons{
+            display: flex;
+            justify-content: center;
+        
+        }
+        .socialicons a{
+            text-decoration: none;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+        .socialicons a i{
+            font-size: 2rem;
+            color: black;
+            opacity: 0.9;
+        }
+        .socialicons a:hover{
+            background-color: #111;
+            transition: 0.5s;
+        }
+        .socialicons a:hover i{
+            color: white;
+            transition: 0.5s;
+        }
+        .scroll-button {
+            background-color: rgb(17, 177, 195);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+          }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logom1.png" alt="Logo" height="140" width="230">
+          
+        </div>
+        <ul class="nav-buttons">
+            <li><a href="#" class="cta-button">Home</a></li>
+            <li> <button class="scroll-button" onclick="scrollDown()">About</button></li>
+            <li><a href="serve.html" class="cta-button" >Services</a></li>
+            <li><a href="contactus.html" class="cta-button">Contact Us</a></li>
+            <li><a href="regwt.php" class="cta-button">Sign Up</a></li>
+            <li><a href="login.php" class="cta-button">Login</a></li>
+            <li><a href="adminlog.php" class="cta-button">Admin</a></li>
+        </ul>
+    </header>
+    <section class="bg">
+        
+        <div class="container">
+            <h2>Welcome to Smart Home</h2>
+            <p>Reduce your home energy by our suggestions</p>
+            <a href="#" class="cta-button">Learn More</a>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <h3>Energy Audits</h3>
+                <p>Discover how your home uses energy and how to save more.</p>
+            </div>
+            <div class="feature">
+                <h3>Smart Solutions</h3>
+                <p>Use our extreme products for energy optimization.</p>
+            </div>
+            <div class="feature">
+                <h3>Saving</h3>
+                <p>Use our bill generator to reduce your power bill</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Home Energy Optimization System</p>
+        </div>
+        <div class="container">
+            <div class="socialicons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+            <div class="footerbottom">
+                <p>Copyright &copy;2023; Designed by<span class="designer">Optitech</span></p>
+            </div>
+          </div>
+    </footer>
+    <script>
+        function scrollDown() {
+          
+          window.scrollTo(0, document.body.scrollHeight);
+        }
+        </script>
+        
+
+    
+</body>
+
+</html>
